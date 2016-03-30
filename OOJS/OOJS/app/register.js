@@ -1,6 +1,8 @@
 ﻿function Person(firstName,lastName,age,dob,gender,ssn) {
+    //private properties
     var SSN = ssn;
     var dob = dob;
+    // public property.
     this.firstName = firstName;
     this.lastName = lastName;
     this.age = age;
