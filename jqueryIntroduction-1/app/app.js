@@ -3,28 +3,33 @@
     {
         $(document).ready(function(){
             loadCountryDropDown();
-            loadStateDropDown();
             bindEvents();
             showInformation("personal");
         });
         
         function loadCountryDropDown(){
-            var countries =[{
-                value:"IN",text:"India"
-            },{
-                "value":"US","text":"United States"
-                
-            },{
-              "value":"WI","text":"West Indies"   
-            }];
-                           
-        }
+            var countries= models.countryList();
+            var ddlCountries= $('#ddlCountry');
+            $.each(countries,function(index,item){
+               var optionTag=$("<option>");
+               $(optionTag)
+                   .val(item.code)
+                   .text(item.name);
+                $(ddlCountries).append(optionTag);
+            });
+            
+            //default selected Value
+            $(ddlCountries).val("");
+        };
+        
         function loadStateDropDown(){
             
         }
+        
         function bindEvents(){
-            
+            $('#registerPersonal').bind('click',registerPersonalInfo);
         }
+        
         function  showInformation(type){
             $('.panel-default').hide();
             if(type==="personal"){
@@ -39,6 +44,16 @@
                  $('#pnlProfessionalInformation').show();
             }
         }
+        
+        function registerPersonalInfo(){
+            var personalInfo={
+                firstName:$('#txtFirstName').val(),
+                lastName:$("#txtLastName").val(),
+                country:$("#ddlCountry").val()
+            };   
+        console.log(personalInfo);
+            showInformation("education");
+     }
         
     }
 )();

@@ -1,38 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="content/css/bootstrap.css">
-        <link rel="stylesheet" href="content/css/bootstrap-theme.min.css">
-        <script src="vendor/jquery-2.2.0.js"></script>
-        <script src="vendor/bootstrap.js"></script>
-    </head>
-    <body>
+
+<head>
+    <link rel="stylesheet" href="content/css/bootstrap.css">
+    <link rel="stylesheet" href="content/css/bootstrap-theme.min.css">
+    <script src="vendor/jquery-2.2.0.js"></script>
+    <script src="vendor/bootstrap.js"></script>
+</head>
+
+<body>
     <div class="container">
-        <div class="panel panel-default" id="pnlPersonalInformation" >
+        <div class="panel panel-default" id="pnlPersonalInformation">
             <div class="panel-heading">Personal Information</div>
             <div class="panel-body">
                 <div class="form-horizontal">
-                     <div class="form-group">
-        <label for="ddlCountry" class="control-label col-xs-2">Email</label>
-        <div class="col-xs-4">
-            <select id="ddlCountry" class="form-control">
-                
-            </select>
-        </div>
-    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2">First Name</label>
+                        <div class="col-xs-4">
+                            <input type="text" class="form-control" placeholder="First Name" id="txtFirstName">
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2">Last Name</label>
+                        <div class="col-xs-4">
+                            <input type="text" class="form-control" placeholder="Last Name" id="txtLastName">
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2">Phone Number</label>
+                        <div class="col-xs-4">
+                            <input type="text" class="form-control" placeholder="Phone Number" id="txtPhoneNumber">
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2">Email</label>
+                        <div class="col-xs-4">
+                            <input type="text" class="form-control" placeholder="email" id="txtEmail">
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2">Age</label>
+                        <div class="col-xs-4">
+                            <input type="text" class="form-control" placeholder="Age" id="txtAge">
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2">Gender</label>
+                        <div class="col-xs-4">
+                            <input type="radio" id="rdbMale" name="gender" value="M">Male
+                            <input type="radio" id="rdbFemale" name="gender" value="F">Femlae
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2">Country</label>
+                        <div class="col-xs-4">
+                            <select class="form-control" id="ddlCountry">
+                                <option value="">Please Select</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <div class="col-xs-12">
+                            <label class="control-label col-xs-2"></label>
+                            <div class="col-xs-4">
+                                <button class="btn btn-primary" id="registerPersonal">Next</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-                <div class="panel panel-default" id="pnlEducationInformation" >
-            <div class="panel-heading">Education Information</div>
-            <div class="panel-body"></div>
+            <div class="panel panel-default" id="pnlEducationInformation">
+                <div class="panel-heading">Education Information</div>
+                <div class="panel-body"></div>
+            </div>
+            <div class="panel panel-default" id="pnlProfessionalInformation">
+                <div class="panel-heading">Professional Information</div>
+                <div class="panel-body"></div>
+            </div>
         </div>
-                <div class="panel panel-default" id="pnlProfessionalInformation" >
-            <div class="panel-heading">Professional Information</div>
-            <div class="panel-body"></div>
-        </div>
-    </div>
-    
-    <script src="app/app.js"></script>
-    </body>
+        <script src="app/models.js"></script>
+        <script src="app/registration.js"></script>
+        <script src="app/app.js"></script>
+</body>
+
 </html>
