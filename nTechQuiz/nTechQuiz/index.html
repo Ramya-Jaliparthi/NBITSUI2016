@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html ng-app="nTechQuiz">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="AngularApp/content/css/bootstrap.css" rel="stylesheet" />
+    <link href="AngularApp/content/css/bootstrap-theme.css" rel="stylesheet" />
+    <script src="AngularApp/vendor/jquery-2.2.0.js"></script>
+    <script src="AngularApp/vendor/bootstrap.js"></script>
+    <script src="AngularApp/vendor/angular.min.js"></script>
+</head>
+<body>
+    <div class="container" ng-controller="mainCtrl">
+       <div ng-include="navigationUrl"></div>
+      
+        <div ng-include="contentTemplate"></div>
+    </div>
+    <!--nav Module-->
+    <script src="AngularApp/app/navigation/nav.js"></script>
+    <script src="AngularApp/app/navigation/navService.js"></script>
+    <!--login Module-->
+    <script src="AngularApp/app/login/login.js"></script>
+    <script src="AngularApp/app/login/loginCtrl.js"></script>
+    <!--Main module-->
+    <script src="AngularApp/app/app.js"></script>
+    <script src="AngularApp/app/common/mainCtrl.js"></script>
+
+</body>
+</html>

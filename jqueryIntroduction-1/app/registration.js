@@ -6,7 +6,7 @@
       
       registerUser.personalInformation={};
       registerUser.professionalInformation={};
-      registerUser.educationInfromation={}''
+      registerUser.educationInfromation={};
   }
 )
 (window.registerUser={});

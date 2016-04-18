@@ -5,7 +5,19 @@
             loadCountryDropDown();
             bindEvents();
             showInformation("personal");
+            addStyles();
         });
+        
+        function addStyles(){
+            $('button').addClass("btn");
+            $('button').addClass("btn-primary");
+                                 
+            $('input').each(function(index,item){
+                if($(item).attr("type")=='text'){
+                    $(item).addClass("form-control");
+                }
+            })
+        }
         
         function loadCountryDropDown(){
             var countries= models.countryList();
@@ -52,8 +64,22 @@
                 country:$("#ddlCountry").val()
             };   
         console.log(personalInfo);
-            showInformation("education");
+          console.log($(this));
+            $(this).attr('disabled',true);
+            $("input").attr("readonly",true);
+            createAnotherButton();
+           // showInformation("education");
      }
+        
+        function createAnotherButton(){
+            var btn=$("<button>").addClass("btn btn-info")
+                               .attr("id","btnNext")
+                            .text("New Button");
+            $(btn).bind("click",function(){
+                alert("hello");
+            })
+            $("#divButtons").append(btn);
+        }
         
     }
 )();
