@@ -20,13 +20,22 @@
                    }
                    $scope.navigationUrl = baseUrl + "navigation/navbar.tpl.html";
                    ///$scope.navItems = navService.navItems;
-                   navService.navItemsFromApi().success(function (response) {
-                       $scope.navItems = response;
-                       //set the default tab
-                       $scope.loadView(response[0]);
-                   }).error(function (errorResponse) {
+                   //navService.navItemsFromApi().success(function (response) {
+                   //    $scope.navItems = response;
+                   //    //set the default tab
+                   //    $scope.loadView(response[0]);
+                   //}).error(function (errorResponse) {
 
-                   });
+                   //});
+
+                   //get navigation items from promise
+
+                   navService.navItemsFromApiWithPromise().then(function(response){
+
+                       $scope.navItems = response;
+                   }).catch(function (response) {
+                       console.log("error");
+                   })
 
                }]);
 })();
