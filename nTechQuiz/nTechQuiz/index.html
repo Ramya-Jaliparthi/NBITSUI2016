@@ -8,12 +8,15 @@
     <script src="AngularApp/vendor/jquery-2.2.0.js"></script>
     <script src="AngularApp/vendor/bootstrap.js"></script>
     <script src="AngularApp/vendor/angular.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
 </head>
 <body>
     <div class="container" ng-controller="mainCtrl">
        <div ng-include="navigationUrl"></div>
+        <!--<div ui-view="main.navbar"></div>-->
       
-        <div ng-include="contentTemplate"></div>
+        <div ui-view></div>
+        <!--<div ng-include="contentTemplate"></div>-->
     </div>
     <!--nav Module-->
     <script src="AngularApp/app/navigation/nav.js"></script>
@@ -21,6 +24,9 @@
     <!--login Module-->
     <script src="AngularApp/app/login/login.js"></script>
     <script src="AngularApp/app/login/loginCtrl.js"></script>
+    <!--register module-->
+<script src="AngularApp/app/register/register.js"></script>
+<script src="AngularApp/app/register/registerCtrl.js"></script>
     <!--Main module-->
     <script src="AngularApp/app/app.js"></script>
     <script src="AngularApp/app/common/mainCtrl.js"></script>

@@ -1,0 +1,84 @@
+﻿{
+  "data": [
+    {
+      "question": "What is type selector?",
+      "answer": "Type selector quite simply matches the name of an element type. To give a color to all level 1 headings"
+    },
+    {
+      "question": "What is universal selector?",
+      "answer": "Rather than selecting elements of a specific type, the universal selector quite simply matches the name of any element type"
+    },
+    {
+      "question": "What is Descendant Selector?",
+      "answer": "Suppose you want to apply a style rule to a particular element only when it lies inside a particular element. As given in the following example, style rule will apply to <em> element only when it lies inside <ul> tag."
+    },
+    {
+      "question": "Which property is used to indent the text of a paragraph?",
+      "answer": "The text-indent property is used to indent the text of a paragraph"
+    },
+    {
+      "question": "What is the purpose of % measurement unit?",
+      "answer": "% - Defines a measurement as a percentage relative to another value, typically an enclosing element"
+    },
+    {
+      "question": "Which property is used to control the scrolling of an image in the background?",
+      "answer": "The background-attachment property is used to control the scrolling of an image in the background."
+    },
+    {
+      "question": "Which property is used to change the face of a font?",
+      "answer": "The font-family property is used to change the face of a font."
+    },
+    {
+      "question": "Which property is used to set the color of a text?",
+      "answer": "The color property is used to set the color of a text."
+    },
+    {
+      "question": "Which property is used to set the text direction?",
+      "answer": "The direction property is used to set the text direction."
+    },
+    {
+      "question": "Which property is used to control the flow and formatting of text?",
+      "answer": "The white-space property is used to control the flow and formatting of text."
+    },
+    {
+      "question": "What does DOCTYPE mean?",
+      "answer": "The term DOCTYPE tells the browser which type of HTML is used on a webpage. In turn, the browsers use DOCTYPE to determine how to render a page. Failing to use DOCTYPE or using a wrong DOCTYPE may load your page in Quirks Mode."
+    },
+    {
+      "question": "What is the syntax difference between a bulleted list and numbered list?",
+      "answer": "Bulleted lists use the <ul> tag, which stands for “unordered,” whereas <ol> is used to create an ordered list"
+    },
+    {
+      "question": "What is the difference between <div> and <frame>?",
+      "answer": "A <div> is a generic container element for grouping and styling, whereas a <frame> creates divisions within a web page and should be used within the <frameset> tag. The use of <frame> and <frameset> are no longer popular and are now being replaced with the more flexible <iframe>, which has become popular for embedding foreign elements (ie. Youtube videos) into a page"
+    },
+    {
+      "question": "What are the new media-related elements in HTML5?",
+      "answer": "HTML5 has strong support for media. There are now special <audio> and <video> tags. There are additional A/V support tags as well: <embed> is a container for 3rd party applications. <track> is for adding text tracks to media. <source> is useful for A/V media from multiple sources"
+    },
+    {
+      "question": "What is the difference between SVG and <Canvas>?",
+      "answer": "<Canvas> is an element that manipulates two-dimensional (2D) pixels while Scalable Vector Graphics works in 2D and three-dimensional (3D) vectors. Essentially, <Canvas> is to SVG as Photoshop is to Illustrator"
+    },
+    {
+      "question": "What are some new input attributes in HTML5?",
+      "answer": "There are many new form elements including: datalist, datetime, output, keygen, date, month, week, time, number, range, email, and url"
+    },
+    {
+      "question": "What are data- attributes good for",
+      "answer": "The HTML5 data- attribute is a new addition that assigns custom data to an element. It was built to store sensitive or private data that is exclusive to a page or application, for which there are no other matching attributes or elements."
+    },
+    {
+      "question": "What is the difference between HTML5 interaction in Sencha and Twitter/Bootstrap",
+      "answer": "Sencha and Twitter/Bootstrap are both HTML development frameworks that integrate HTML5, CSS3, and JavaScript. The major difference is that in Sencha, the three languages are all comingled together in code, whereas in Bootstrap, HTML and CSS and decoupled"
+    },
+    {
+      "question": "Describe the difference between cookies, sessionStorage, and localStorage.",
+      "answer": "Cookies are small text files that websites place in a browser for tracking or login purposes. Meanwhile, localStorage and sessionStorage are new objects, both of which are storage specifications but vary in scope and duration. Of the two, localStorage is permanent and website-specific whereas sessionStorage only lasts as long as the duration of the longest open tab"
+    },
+    {
+      "question": "What are some of the major new API’s that come standard with HTML5?",
+      "answer": "To name a few: Media API, Text Track API, Application Cache API, User Interaction, Data Transfer API, Command API, Constraint Validation API, and the History API"
+    }
+  ]
+}

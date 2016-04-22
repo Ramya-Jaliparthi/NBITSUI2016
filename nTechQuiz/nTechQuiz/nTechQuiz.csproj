@@ -249,6 +249,15 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AngularApp2\app\app.js" />
+    <Content Include="AngularApp2\content\css\bootstrap-theme.css" />
+    <Content Include="AngularApp2\content\css\bootstrap-theme.min.css" />
+    <Content Include="AngularApp2\content\css\bootstrap.css" />
+    <Content Include="AngularApp2\content\css\bootstrap.min.css" />
+    <Content Include="AngularApp2\content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="AngularApp2\vendor\angular.min.js" />
+    <Content Include="AngularApp2\vendor\bootstrap.js" />
+    <Content Include="AngularApp2\vendor\jquery-2.2.0.js" />
     <Content Include="AngularApp\app\app.js" />
     <Content Include="AngularApp\app\common\mainCtrl.js" />
     <Content Include="AngularApp\app\contact\contact.tpl.html" />
@@ -258,7 +267,12 @@
     <Content Include="AngularApp\app\navigation\nav.js" />
     <Content Include="AngularApp\app\navigation\navbar.tpl.html" />
     <Content Include="AngularApp\app\navigation\navService.js" />
-    <Content Include="AngularApp\app\registration\register.tpl.html" />
+    <Content Include="AngularApp\app\quiz\questions.js" />
+    <Content Include="AngularApp\app\quiz\questions.tpl.html" />
+    <Content Include="AngularApp\app\quiz\questionSvc.js" />
+    <Content Include="AngularApp\app\register\register.js" />
+    <Content Include="AngularApp\app\register\register.tpl.html" />
+    <Content Include="AngularApp\app\register\registerCtrl.js" />
     <Content Include="AngularApp\content\css\bootstrap-theme.css" />
     <Content Include="AngularApp\content\css\bootstrap-theme.min.css" />
     <Content Include="AngularApp\content\css\bootstrap.css" />
@@ -274,6 +288,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="quiz.html" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -309,6 +324,15 @@
     <Content Include="AngularApp\content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="AngularApp\content\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="AngularApp\app\home\home.tpl.html" />
+    <Content Include="AngularApp2\content\css\bootstrap-theme.css.map" />
+    <Content Include="AngularApp2\content\css\bootstrap-theme.min.css.map" />
+    <Content Include="AngularApp2\content\css\bootstrap.css.map" />
+    <Content Include="AngularApp2\content\css\bootstrap.min.css.map" />
+    <Content Include="AngularApp2\content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="AngularApp2\content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="AngularApp2\content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="AngularApp2\content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="AngularApp\app\data\questions.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -337,7 +361,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AngularApp\app\quiz\" />
     <Folder Include="AngularApp\app\security\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
