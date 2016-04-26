@@ -235,6 +235,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\loginController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -260,10 +261,12 @@
     <Content Include="AngularApp2\vendor\jquery-2.2.0.js" />
     <Content Include="AngularApp\app\app.js" />
     <Content Include="AngularApp\app\common\mainCtrl.js" />
+    <Content Include="AngularApp\app\common\watchersDirective.js" />
     <Content Include="AngularApp\app\contact\contact.tpl.html" />
     <Content Include="AngularApp\app\login\login.js" />
     <Content Include="AngularApp\app\login\login.tpl.html" />
     <Content Include="AngularApp\app\login\loginCtrl.js" />
+    <Content Include="AngularApp\app\login\loginFact.js" />
     <Content Include="AngularApp\app\navigation\nav.js" />
     <Content Include="AngularApp\app\navigation\navbar.tpl.html" />
     <Content Include="AngularApp\app\navigation\navService.js" />

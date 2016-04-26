@@ -31,6 +31,7 @@ angular.module('nTechQuiz')
          var login = {
              name: "login",
              url: "/login",
+             controller:"loginCtrl as vm",
              templateUrl: "AngularApp/app/login/login.tpl.html"
          };
          $stateProvider.state('main', navBar);

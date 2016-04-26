@@ -274,8 +274,27 @@
             name: "New Zealand"
         }]
         $scope.register = function () {
-            $state.go('home',{param:$scope.registerUser);
+            //$scope.$apply();
+            setTimeout(function () {
+                $scope.$apply(function () {
+                    $scope.registerUser.firstName = "Kiran";
+                })
+               
+                
+            },5000);
+           // $state.go('home', { param: $scope.registerUser });
         };
+
+
+
+        $scope.$watch("selectedContientCountry", function (newVal, oldVal) {
+            
+            console.log("Old Value--");
+            console.log(oldVal)
+
+            console.log("--New Value---");
+            console.log(newVal)
+        });
     }
     angular.module('nTechQuiz.register')
       .controller('registerCtrl',["$scope","$state",registerCtrl])
