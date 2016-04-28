@@ -2,7 +2,8 @@
 angular.module('nTechQuiz', ["nTechQuiz.login",
     "nTechQuiz.nav",
     "nTechQuiz.register",
-"ui.router"]);
+"ui.router",
+'nTechQuiz.security']);
 
 angular.module('nTechQuiz')
  .config(['$urlRouterProvider', '$stateProvider',
@@ -39,3 +40,25 @@ angular.module('nTechQuiz')
          $stateProvider.state("login", login);
          $stateProvider.state("register", register);
      }]);
+
+angular.module('nTechQuiz')
+.run(['authenticateSvc', '$rootScope', '$state',
+    function (authenticateSvc, $rootScope,$state) {
+    
+        $rootScope.$on('$stateChangeSuccess',
+            function (event, toState, toParams, fromState, fromParams, options) {
+                //console.log(authenticateSvc.getUserDetails().isAuthenticated);
+                //console.log("route changed");
+                //console.log(toState);
+                //console.log(fromState);
+                var isAuthenticated = authenticateSvc.getUserDetails().isAuthenticated;
+                if (toState.name != 'login' && isAuthenticated) {
+
+                }
+                else {
+                    $state.go('login');
+                }
+            });
+
+}]);
+

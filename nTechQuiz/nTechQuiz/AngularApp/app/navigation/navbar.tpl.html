@@ -26,8 +26,10 @@
                 </div>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="" ui-sref="register">Register</a></li>
-                <li><a href="" ui-sref="login">Login</a></li>
+                <li ng-show="userDetails.isAuthenticated"><a href="" ui-sref="register">{{userDetails.FirstName}}, {{userDetails.LastName}}</a></li>
+                <li ng-show="userDetails.isAuthenticated"><a href="" ng-click="logout();">Logout</a></li>
+                <li  ng-show="!userDetails.isAuthenticated"><a href="" ui-sref="register">Register</a></li>
+                <li ng-show="!userDetails.isAuthenticated"><a href="" ui-sref="login">Login</a></li>
                 <!--<li><a href="#" ng-click="loadView('login')" >Login</a></li>-->
             </ul>
         </div>

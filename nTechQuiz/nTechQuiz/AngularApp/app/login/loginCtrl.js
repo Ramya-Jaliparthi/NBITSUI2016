@@ -1,10 +1,10 @@
 ﻿(function () {
     'use strict';
-    var loginCtrl = function (loginFact) {
+    var loginCtrl = function (loginFact, authenticateSvc, $state, $rootScope) {
         var vm = this;
         vm.login = {
-            UserName: "kiran",
-            Password: "1234567890"
+            UserName: "",
+            Password: ""
         };
 
         vm.loginUser = function () {
@@ -12,6 +12,13 @@
                 .then(function (response) {
                     //logic to handle the authentication
                     console.log(response);
+                    if (response.statusText=="OK" && response.status==200) {
+                        var userDetails = response.data;
+                        userDetails.isAuthenticated = true;
+                        authenticateSvc.authenticate(userDetails);
+                        $rootScope.$broadcast("AUTHENTICATION_SUCCESS", { data: userDetails });
+                        $state.go('home');
+                    }
                 })
                 .catch(function (response) {
                 });
@@ -20,6 +27,6 @@
     };
     angular.module('nTechQuiz.login')
            .controller('loginCtrl',
-           ["loginFact",loginCtrl])
+           ["loginFact","authenticateSvc",'$state','$rootScope',loginCtrl])
 
 })();
