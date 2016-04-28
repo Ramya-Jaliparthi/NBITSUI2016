@@ -48,7 +48,7 @@
 
                    $rootScope.$on("AUTHENTICATION_SUCCESS", function (event, args) {
 
-                       console.log(args);
+                      // console.log(args);
                        setUserDetails();
                    });
 
