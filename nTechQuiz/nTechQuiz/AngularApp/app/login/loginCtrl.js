@@ -24,6 +24,10 @@
                 });
         }
 
+        vm.clickMe = function () {
+            vm.changedClass = "btn btn-danger";
+        }
+
     };
     angular.module('nTechQuiz.login')
            .controller('loginCtrl',

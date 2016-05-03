@@ -2,5 +2,18 @@
     <input type="text" ng-model="vm.login.UserName" />
     <input type="text" ng-model="vm.login.Password" />
 
-    <button class="btn btn-primary" ng-click="vm.loginUser()">login</button>
+    <button class="btn btn-primary" 
+           
+            ng-click="vm.loginUser()">login</button>
+
+    <button class="btn btn-primary" ng-class="vm.changedClass"
+            custom-click="vm.loginUser()">Change me
+      
+        
+    </button>
+
+    <button class="btn btn-primary" ng-class="vm.changedClass"
+            custom-click-x="vm.loginUser()">
+        Change me
+    </button>
 </div>

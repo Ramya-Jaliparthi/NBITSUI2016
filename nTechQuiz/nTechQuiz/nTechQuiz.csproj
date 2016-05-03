@@ -260,6 +260,9 @@
     <Content Include="AngularApp2\vendor\bootstrap.js" />
     <Content Include="AngularApp2\vendor\jquery-2.2.0.js" />
     <Content Include="AngularApp\app\app.js" />
+    <Content Include="AngularApp\app\common\common.js" />
+    <Content Include="AngularApp\app\common\customClick.js" />
+    <Content Include="AngularApp\app\common\customNavigation.js" />
     <Content Include="AngularApp\app\common\mainCtrl.js" />
     <Content Include="AngularApp\app\common\security\authenticateSvc.js" />
     <Content Include="AngularApp\app\common\watchersDirective.js" />

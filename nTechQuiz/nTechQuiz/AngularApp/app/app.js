@@ -1,9 +1,11 @@
 ﻿//Module Creation.
-angular.module('nTechQuiz', ["nTechQuiz.login",
+angular.module('nTechQuiz', [
+    "nTechQuiz.login",
     "nTechQuiz.nav",
     "nTechQuiz.register",
 "ui.router",
-'nTechQuiz.security']);
+'nTechQuiz.security',
+'nTechQuiz.components']);
 
 angular.module('nTechQuiz')
  .config(['$urlRouterProvider', '$stateProvider',
