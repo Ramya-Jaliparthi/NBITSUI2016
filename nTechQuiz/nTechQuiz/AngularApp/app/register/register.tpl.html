@@ -23,7 +23,9 @@
             <div class="col-xs-4">
                 <input type="text" class="form-control"
                         placeholder="Phone Number" 
-                       ng-model="registerUser.phoneNumber">
+                       ng-model="registerUser.phoneNumber"
+                       number-only
+                       maxlength="3">
             </div>
 
         </div>
@@ -41,7 +43,20 @@
             <div class="col-xs-4">
                 <input type="text" class="form-control" 
                        placeholder="Age"
-                        ng-model="registerUser.age">
+                        ng-model="registerUser.age"
+                       number-only>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-2">DOB</label>
+            <div class="col-xs-4">
+                <input type="text" class="form-control"
+                       placeholder="DOB"
+                       custom-date-picker
+                       mindate="-1"
+                       maxdate="0D"
+                       ng-model="registerUser.dob">
             </div>
 
         </div>

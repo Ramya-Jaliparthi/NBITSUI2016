@@ -13,6 +13,10 @@
                 street: ""
             }
         };
+        $scope.config = {
+            maxDate: "0",
+            minDate:"-18Y"
+        }
         $scope.countries = [
 { "name": "Afghanistan", "code": "AF" },
 { "name": "Åland Islands", "code": "AX" },
@@ -282,7 +286,8 @@
                
                 
             },5000);
-           // $state.go('home', { param: $scope.registerUser });
+            // $state.go('home', { param: $scope.registerUser });
+            console.log($scope.registerUser);
         };
 
 

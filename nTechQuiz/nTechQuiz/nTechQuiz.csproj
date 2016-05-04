@@ -262,8 +262,10 @@
     <Content Include="AngularApp\app\app.js" />
     <Content Include="AngularApp\app\common\common.js" />
     <Content Include="AngularApp\app\common\customClick.js" />
+    <Content Include="AngularApp\app\common\customDatePicker.js" />
     <Content Include="AngularApp\app\common\customNavigation.js" />
     <Content Include="AngularApp\app\common\mainCtrl.js" />
+    <Content Include="AngularApp\app\common\numberOnly.js" />
     <Content Include="AngularApp\app\common\security\authenticateSvc.js" />
     <Content Include="AngularApp\app\common\watchersDirective.js" />
     <Content Include="AngularApp\app\contact\contact.tpl.html" />

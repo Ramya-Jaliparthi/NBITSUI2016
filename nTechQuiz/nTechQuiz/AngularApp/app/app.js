@@ -54,7 +54,10 @@ angular.module('nTechQuiz')
                 //console.log(toState);
                 //console.log(fromState);
                 var isAuthenticated = authenticateSvc.getUserDetails().isAuthenticated;
-                if (toState.name != 'login' && isAuthenticated) {
+                if (toState.name == 'register') {
+
+                }
+                else if (toState.name != 'login' && isAuthenticated) {
 
                 }
                 else {
