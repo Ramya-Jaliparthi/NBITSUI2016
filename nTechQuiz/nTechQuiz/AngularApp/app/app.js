@@ -5,6 +5,7 @@ angular.module('nTechQuiz', [
     "nTechQuiz.register",
 "ui.router",
 'nTechQuiz.security',
+'nTechQuiz.questions',
 'nTechQuiz.components']);
 
 angular.module('nTechQuiz')
@@ -37,10 +38,17 @@ angular.module('nTechQuiz')
              controller:"loginCtrl as vm",
              templateUrl: "AngularApp/app/login/login.tpl.html"
          };
+         var questions = {
+             name: "questions",
+             url: "/questions",
+             controller: "questionCtrl",
+             templateUrl: "AngularApp/app/quiz/questions.tpl.html"
+         };
          $stateProvider.state('main', navBar);
          $stateProvider.state("home", home);
          $stateProvider.state("login", login);
          $stateProvider.state("register", register);
+         $stateProvider.state("questions", questions);
      }]);
 
 angular.module('nTechQuiz')

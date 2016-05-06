@@ -14,6 +14,11 @@
                  TemplateUrl: "contact/contact.tpl.html",
                  CssClass: ""
              },
+              {
+                  Name: "Questions",
+                  TemplateUrl: "contact/contact.tpl.html",
+                  CssClass: ""
+              },
          ]
          this.navItemsFromApi = function () {
              return $http.get('api/nav');

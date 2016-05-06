@@ -11,6 +11,7 @@
     <script src="AngularApp/vendor/bootstrap.js"></script>
     <script src="AngularApp/vendor/angular.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 </head>
 <body>
     <div class="container" ng-controller="mainCtrl">
@@ -18,7 +19,8 @@
         <!--<div ui-view="main.navbar"></div>-->
       
         <div ui-view></div>
-
+        <div parent-dir>
+        </div>
         <!--<div custom-login></div>
         <custom-login></custom-login>
         <div class="custom-login"></div>-->
@@ -30,7 +32,9 @@
     <script src="AngularApp/app/common/customDatePicker.js"></script>
     <script src="AngularApp/app/common/numberOnly.js"></script>
     <script src="AngularApp/app/common/customNavigation.js"></script>
-     <script src="AngularApp/app/navigation/nav.js"></script>
+    <script src="AngularApp/app/common/customEmailValidator.js"></script>
+    <script src="AngularApp/app/common/customDetails.js"></script> 
+    <script src="AngularApp/app/navigation/nav.js"></script>
     <script src="AngularApp/app/navigation/navService.js"></script>
 
     <script src="AngularApp/app/common/security/authenticateSvc.js"></script>  <!--login Module-->
@@ -42,7 +46,10 @@
     <!--register module-->
 <script src="AngularApp/app/register/register.js"></script>
 <script src="AngularApp/app/register/registerCtrl.js"></script>
-    <!--Main module-->
+<script src="AngularApp/app/quiz/questions.js"></script>
+    <script src="AngularApp/app/quiz/questionSvc.js"></script>
+    <script src="AngularApp/app/quiz/questionCtrl.js"></script>
+      <!--Main module-->
     <script src="AngularApp/app/app.js"></script>
     <script src="AngularApp/app/common/mainCtrl.js"></script>
 

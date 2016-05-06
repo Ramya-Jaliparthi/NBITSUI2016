@@ -15,6 +15,7 @@ namespace nTechQuiz.Models
         {
             var list = new List<Navigation>();
             list.Add(new Navigation() { Name = "Home", TemplateUrl = "home/home.tpl.html", CssClass = "active" });
+            list.Add(new Navigation() { Name = "Questions", TemplateUrl = "quiz/questions.tpl.html", CssClass = "" });
             list.Add(new Navigation() { Name = "Contact", TemplateUrl = "contact/contact.tpl.html", CssClass = "" });
             return list;
         }

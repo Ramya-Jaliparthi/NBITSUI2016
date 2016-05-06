@@ -1,1 +1,8 @@
-﻿<div></div>
+﻿<div ng-repeat="item in questions">
+    <div class="panel panel-default">
+        <div class="panel-heading"><a ng-click="handleClick(item)">{{$index+1}}.{{item.question}}</a></div>
+        <div class="panel-body" ng-show="item.showAnswer">
+            {{item.answer}}
+        </div>
+    </div>
+</div>

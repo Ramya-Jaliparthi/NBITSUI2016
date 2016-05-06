@@ -263,6 +263,8 @@
     <Content Include="AngularApp\app\common\common.js" />
     <Content Include="AngularApp\app\common\customClick.js" />
     <Content Include="AngularApp\app\common\customDatePicker.js" />
+    <Content Include="AngularApp\app\common\customDetails.js" />
+    <Content Include="AngularApp\app\common\customEmailValidator.js" />
     <Content Include="AngularApp\app\common\customNavigation.js" />
     <Content Include="AngularApp\app\common\mainCtrl.js" />
     <Content Include="AngularApp\app\common\numberOnly.js" />
@@ -276,6 +278,7 @@
     <Content Include="AngularApp\app\navigation\nav.js" />
     <Content Include="AngularApp\app\navigation\navbar.tpl.html" />
     <Content Include="AngularApp\app\navigation\navService.js" />
+    <Content Include="AngularApp\app\quiz\questionCtrl.js" />
     <Content Include="AngularApp\app\quiz\questions.js" />
     <Content Include="AngularApp\app\quiz\questions.tpl.html" />
     <Content Include="AngularApp\app\quiz\questionSvc.js" />
